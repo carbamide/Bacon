@@ -68,7 +68,7 @@
 }
 
 #pragma mark -
-#pragma mark Methods
+#pragma mark - Methods
 
 -(void)setupSplitviewController
 {
@@ -233,7 +233,7 @@
 }
 
 #pragma mark -
-#pragma mark IBActions
+#pragma mark - IBActions
 
 -(IBAction)toggleBeaconAction:(id)sender
 {
@@ -311,8 +311,8 @@
     }
 }
 
-#pragma mark
-#pragma mark CNSplitViewToolbarDelegate
+#pragma mark -
+#pragma mark - CNSplitViewToolbarDelegate
 
 - (NSUInteger)toolbarAttachedSubviewIndex:(CNSplitViewToolbar *)theToolbar
 {
@@ -353,8 +353,8 @@
     }
 }
 
-#pragma mark
-#pragma mark NSControlTextDelegate
+#pragma mark -
+#pragma mark - NSControlTextDelegate
 
 - (void)controlTextDidChange:(NSNotification *)notification
 {
@@ -417,7 +417,7 @@
 }
 
 #pragma mark - 
-#pragma mark NSTableViewDelegate Drag Support
+#pragma mark - NSTableViewDelegate Drag Support
 
 -(NSDragOperation)tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation
 {
