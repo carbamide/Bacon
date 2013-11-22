@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		296DB3FF183FD319005CFF0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296DB3FE183FD319005CFF0B /* Cocoa.framework */; };
+		296DB409183FD319005CFF0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 296DB407183FD319005CFF0B /* InfoPlist.strings */; };
+		296DB40B183FD319005CFF0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB40A183FD319005CFF0B /* main.m */; };
+		296DB40F183FD319005CFF0B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 296DB40D183FD319005CFF0B /* Credits.rtf */; };
+		296DB412183FD319005CFF0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB411183FD319005CFF0B /* AppDelegate.m */; };
+		296DB415183FD319005CFF0B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296DB413183FD319005CFF0B /* MainMenu.xib */; };
+		296DB417183FD319005CFF0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296DB416183FD319005CFF0B /* Images.xcassets */; };
+		296DB41E183FD319005CFF0B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296DB41D183FD319005CFF0B /* XCTest.framework */; };
+		296DB41F183FD319005CFF0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296DB3FE183FD319005CFF0B /* Cocoa.framework */; };
+		296DB435183FD32B005CFF0B /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB433183FD32B005CFF0B /* MainWindowController.m */; };
+		296DB436183FD32B005CFF0B /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296DB434183FD32B005CFF0B /* MainWindowController.xib */; };
+		296DB43A183FE5A9005CFF0B /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296DB439183FE5A9005CFF0B /* IOBluetooth.framework */; };
+		296DB43D183FE734005CFF0B /* AdvertisementData.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB43C183FE734005CFF0B /* AdvertisementData.m */; };
+		296DB440183FED84005CFF0B /* Bacon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 296DB43E183FED84005CFF0B /* Bacon.xcdatamodeld */; };
+		296DB443183FEF51005CFF0B /* BeaconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB442183FEF51005CFF0B /* BeaconCell.m */; };
+		296DB446183FF592005CFF0B /* Beacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB445183FF592005CFF0B /* Beacon.m */; };
+		296DB455183FF757005CFF0B /* CNSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB449183FF757005CFF0B /* CNSplitView.m */; };
+		296DB456183FF757005CFF0B /* CNSplitViewDraggingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB44B183FF757005CFF0B /* CNSplitViewDraggingHandle.m */; };
+		296DB457183FF757005CFF0B /* CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB44E183FF757005CFF0B /* CNSplitViewToolbar.m */; };
+		296DB458183FF757005CFF0B /* CNSplitViewToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB450183FF757005CFF0B /* CNSplitViewToolbarButton.m */; };
+		296DB459183FF757005CFF0B /* CNSplitViewToolbarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB452183FF757005CFF0B /* CNSplitViewToolbarButtonCell.m */; };
+		296DB45A183FF757005CFF0B /* NSView+CNSplitViewToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB454183FF757005CFF0B /* NSView+CNSplitViewToolbar.m */; };
+		296DB462183FF96D005CFF0B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296DB461183FF96D005CFF0B /* QuartzCore.framework */; };
+		296DB46518400D19005CFF0B /* ProjectHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB46418400D19005CFF0B /* ProjectHandler.m */; };
+		296DB46818401703005CFF0B /* NSImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 296DB46718401703005CFF0B /* NSImage+Extensions.m */; };
+		9DD49903D9B344099981422C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FE2DD606F24886BEBCD60E /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		296DB420183FD319005CFF0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 296DB3F3183FD319005CFF0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 296DB3FA183FD319005CFF0B;
+			remoteInfo = Bacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		296DB3FB183FD319005CFF0B /* Bacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		296DB3FE183FD319005CFF0B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		296DB401183FD319005CFF0B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		296DB402183FD319005CFF0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		296DB403183FD319005CFF0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		296DB406183FD319005CFF0B /* Bacon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bacon-Info.plist"; sourceTree = "<group>"; };
+		296DB408183FD319005CFF0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		296DB40A183FD319005CFF0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		296DB40C183FD319005CFF0B /* Bacon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bacon-Prefix.pch"; sourceTree = "<group>"; };
+		296DB40E183FD319005CFF0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		296DB410183FD319005CFF0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		296DB411183FD319005CFF0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		296DB414183FD319005CFF0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		296DB416183FD319005CFF0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		296DB41C183FD319005CFF0B /* BaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		296DB41D183FD319005CFF0B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		296DB432183FD32B005CFF0B /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		296DB433183FD32B005CFF0B /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		296DB434183FD32B005CFF0B /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		296DB439183FE5A9005CFF0B /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		296DB43B183FE734005CFF0B /* AdvertisementData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisementData.h; sourceTree = "<group>"; };
+		296DB43C183FE734005CFF0B /* AdvertisementData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementData.m; sourceTree = "<group>"; };
+		296DB43F183FED84005CFF0B /* Bacon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bacon.xcdatamodel; sourceTree = "<group>"; };
+		296DB441183FEF51005CFF0B /* BeaconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconCell.h; sourceTree = "<group>"; };
+		296DB442183FEF51005CFF0B /* BeaconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconCell.m; sourceTree = "<group>"; };
+		296DB444183FF592005CFF0B /* Beacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beacon.h; sourceTree = "<group>"; };
+		296DB445183FF592005CFF0B /* Beacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beacon.m; sourceTree = "<group>"; };
+		296DB447183FF757005CFF0B /* CNSplitViewDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewDefinitions.h; sourceTree = "<group>"; };
+		296DB448183FF757005CFF0B /* CNSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitView.h; sourceTree = "<group>"; };
+		296DB449183FF757005CFF0B /* CNSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitView.m; sourceTree = "<group>"; };
+		296DB44A183FF757005CFF0B /* CNSplitViewDraggingHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewDraggingHandle.h; sourceTree = "<group>"; };
+		296DB44B183FF757005CFF0B /* CNSplitViewDraggingHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewDraggingHandle.m; sourceTree = "<group>"; };
+		296DB44C183FF757005CFF0B /* CNSplitViewToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbarDelegate.h; sourceTree = "<group>"; };
+		296DB44D183FF757005CFF0B /* CNSplitViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbar.h; sourceTree = "<group>"; };
+		296DB44E183FF757005CFF0B /* CNSplitViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbar.m; sourceTree = "<group>"; };
+		296DB44F183FF757005CFF0B /* CNSplitViewToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbarButton.h; sourceTree = "<group>"; };
+		296DB450183FF757005CFF0B /* CNSplitViewToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbarButton.m; sourceTree = "<group>"; };
+		296DB451183FF757005CFF0B /* CNSplitViewToolbarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSplitViewToolbarButtonCell.h; sourceTree = "<group>"; };
+		296DB452183FF757005CFF0B /* CNSplitViewToolbarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSplitViewToolbarButtonCell.m; sourceTree = "<group>"; };
+		296DB453183FF757005CFF0B /* NSView+CNSplitViewToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+CNSplitViewToolbar.h"; sourceTree = "<group>"; };
+		296DB454183FF757005CFF0B /* NSView+CNSplitViewToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+CNSplitViewToolbar.m"; sourceTree = "<group>"; };
+		296DB461183FF96D005CFF0B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		296DB46318400D19005CFF0B /* ProjectHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectHandler.h; sourceTree = "<group>"; };
+		296DB46418400D19005CFF0B /* ProjectHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectHandler.m; sourceTree = "<group>"; };
+		296DB46618401703005CFF0B /* NSImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Extensions.h"; sourceTree = "<group>"; };
+		296DB46718401703005CFF0B /* NSImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Extensions.m"; sourceTree = "<group>"; };
+		30FE2DD606F24886BEBCD60E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7552382C21764DFFA3217AB2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		296DB3F8183FD319005CFF0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296DB462183FF96D005CFF0B /* QuartzCore.framework in Frameworks */,
+				296DB43A183FE5A9005CFF0B /* IOBluetooth.framework in Frameworks */,
+				296DB3FF183FD319005CFF0B /* Cocoa.framework in Frameworks */,
+				9DD49903D9B344099981422C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296DB419183FD319005CFF0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296DB41F183FD319005CFF0B /* Cocoa.framework in Frameworks */,
+				296DB41E183FD319005CFF0B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		296DB3F2183FD319005CFF0B = {
+			isa = PBXGroup;
+			children = (
+				296DB404183FD319005CFF0B /* Bacon */,
+				296DB405183FD319005CFF0B /* Supporting Files */,
+				296DB3FD183FD319005CFF0B /* Frameworks */,
+				296DB3FC183FD319005CFF0B /* Products */,
+				7552382C21764DFFA3217AB2 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		296DB3FC183FD319005CFF0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				296DB3FB183FD319005CFF0B /* Bacon.app */,
+				296DB41C183FD319005CFF0B /* BaconTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		296DB3FD183FD319005CFF0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				296DB461183FF96D005CFF0B /* QuartzCore.framework */,
+				296DB439183FE5A9005CFF0B /* IOBluetooth.framework */,
+				296DB3FE183FD319005CFF0B /* Cocoa.framework */,
+				296DB41D183FD319005CFF0B /* XCTest.framework */,
+				296DB400183FD319005CFF0B /* Other Frameworks */,
+				30FE2DD606F24886BEBCD60E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		296DB400183FD319005CFF0B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				296DB401183FD319005CFF0B /* AppKit.framework */,
+				296DB402183FD319005CFF0B /* CoreData.framework */,
+				296DB403183FD319005CFF0B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		296DB404183FD319005CFF0B /* Bacon */ = {
+			isa = PBXGroup;
+			children = (
+				296DB45F183FF8D2005CFF0B /* Classes */,
+				296DB45D183FF8C3005CFF0B /* Core Data */,
+				296DB45E183FF8CB005CFF0B /* Singletons */,
+				296DB45C183FF8B3005CFF0B /* User Interface */,
+				296DB460183FF8ED005CFF0B /* Vendor */,
+			);
+			path = Bacon;
+			sourceTree = "<group>";
+		};
+		296DB405183FD319005CFF0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				296DB416183FD319005CFF0B /* Images.xcassets */,
+				296DB406183FD319005CFF0B /* Bacon-Info.plist */,
+				296DB407183FD319005CFF0B /* InfoPlist.strings */,
+				296DB40A183FD319005CFF0B /* main.m */,
+				296DB40C183FD319005CFF0B /* Bacon-Prefix.pch */,
+				296DB40D183FD319005CFF0B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			path = Bacon;
+			sourceTree = "<group>";
+		};
+		296DB45B183FF75B005CFF0B /* CNSplitView */ = {
+			isa = PBXGroup;
+			children = (
+				296DB447183FF757005CFF0B /* CNSplitViewDefinitions.h */,
+				296DB448183FF757005CFF0B /* CNSplitView.h */,
+				296DB449183FF757005CFF0B /* CNSplitView.m */,
+				296DB44A183FF757005CFF0B /* CNSplitViewDraggingHandle.h */,
+				296DB44B183FF757005CFF0B /* CNSplitViewDraggingHandle.m */,
+				296DB44C183FF757005CFF0B /* CNSplitViewToolbarDelegate.h */,
+				296DB44D183FF757005CFF0B /* CNSplitViewToolbar.h */,
+				296DB44E183FF757005CFF0B /* CNSplitViewToolbar.m */,
+				296DB44F183FF757005CFF0B /* CNSplitViewToolbarButton.h */,
+				296DB450183FF757005CFF0B /* CNSplitViewToolbarButton.m */,
+				296DB451183FF757005CFF0B /* CNSplitViewToolbarButtonCell.h */,
+				296DB452183FF757005CFF0B /* CNSplitViewToolbarButtonCell.m */,
+				296DB453183FF757005CFF0B /* NSView+CNSplitViewToolbar.h */,
+				296DB454183FF757005CFF0B /* NSView+CNSplitViewToolbar.m */,
+			);
+			name = CNSplitView;
+			sourceTree = "<group>";
+		};
+		296DB45C183FF8B3005CFF0B /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				296DB413183FD319005CFF0B /* MainMenu.xib */,
+				296DB434183FD32B005CFF0B /* MainWindowController.xib */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		296DB45D183FF8C3005CFF0B /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				296DB444183FF592005CFF0B /* Beacon.h */,
+				296DB445183FF592005CFF0B /* Beacon.m */,
+				296DB43E183FED84005CFF0B /* Bacon.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		296DB45E183FF8CB005CFF0B /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				296DB410183FD319005CFF0B /* AppDelegate.h */,
+				296DB411183FD319005CFF0B /* AppDelegate.m */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		296DB45F183FF8D2005CFF0B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				296DB46318400D19005CFF0B /* ProjectHandler.h */,
+				296DB46418400D19005CFF0B /* ProjectHandler.m */,
+				296DB43B183FE734005CFF0B /* AdvertisementData.h */,
+				296DB43C183FE734005CFF0B /* AdvertisementData.m */,
+				296DB441183FEF51005CFF0B /* BeaconCell.h */,
+				296DB442183FEF51005CFF0B /* BeaconCell.m */,
+				296DB432183FD32B005CFF0B /* MainWindowController.h */,
+				296DB433183FD32B005CFF0B /* MainWindowController.m */,
+				296DB46618401703005CFF0B /* NSImage+Extensions.h */,
+				296DB46718401703005CFF0B /* NSImage+Extensions.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		296DB460183FF8ED005CFF0B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				296DB45B183FF75B005CFF0B /* CNSplitView */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		296DB3FA183FD319005CFF0B /* Bacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296DB42C183FD319005CFF0B /* Build configuration list for PBXNativeTarget "Bacon" */;
+			buildPhases = (
+				27A74BA8907C47AB80E1A639 /* Check Pods Manifest.lock */,
+				296DB3F7183FD319005CFF0B /* Sources */,
+				296DB3F8183FD319005CFF0B /* Frameworks */,
+				296DB3F9183FD319005CFF0B /* Resources */,
+				425D553A0F50419C95811A78 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bacon;
+			productName = Bacon;
+			productReference = 296DB3FB183FD319005CFF0B /* Bacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		296DB41B183FD319005CFF0B /* BaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296DB42F183FD319005CFF0B /* Build configuration list for PBXNativeTarget "BaconTests" */;
+			buildPhases = (
+				296DB418183FD319005CFF0B /* Sources */,
+				296DB419183FD319005CFF0B /* Frameworks */,
+				296DB41A183FD319005CFF0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				296DB421183FD319005CFF0B /* PBXTargetDependency */,
+			);
+			name = BaconTests;
+			productName = BaconTests;
+			productReference = 296DB41C183FD319005CFF0B /* BaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		296DB3F3183FD319005CFF0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jukaela Enterprises";
+				TargetAttributes = {
+					296DB41B183FD319005CFF0B = {
+						TestTargetID = 296DB3FA183FD319005CFF0B;
+					};
+				};
+			};
+			buildConfigurationList = 296DB3F6183FD319005CFF0B /* Build configuration list for PBXProject "Bacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 296DB3F2183FD319005CFF0B;
+			productRefGroup = 296DB3FC183FD319005CFF0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				296DB3FA183FD319005CFF0B /* Bacon */,
+				296DB41B183FD319005CFF0B /* BaconTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		296DB3F9183FD319005CFF0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296DB409183FD319005CFF0B /* InfoPlist.strings in Resources */,
+				296DB417183FD319005CFF0B /* Images.xcassets in Resources */,
+				296DB40F183FD319005CFF0B /* Credits.rtf in Resources */,
+				296DB415183FD319005CFF0B /* MainMenu.xib in Resources */,
+				296DB436183FD32B005CFF0B /* MainWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296DB41A183FD319005CFF0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27A74BA8907C47AB80E1A639 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		425D553A0F50419C95811A78 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		296DB3F7183FD319005CFF0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296DB46818401703005CFF0B /* NSImage+Extensions.m in Sources */,
+				296DB455183FF757005CFF0B /* CNSplitView.m in Sources */,
+				296DB45A183FF757005CFF0B /* NSView+CNSplitViewToolbar.m in Sources */,
+				296DB435183FD32B005CFF0B /* MainWindowController.m in Sources */,
+				296DB412183FD319005CFF0B /* AppDelegate.m in Sources */,
+				296DB40B183FD319005CFF0B /* main.m in Sources */,
+				296DB458183FF757005CFF0B /* CNSplitViewToolbarButton.m in Sources */,
+				296DB46518400D19005CFF0B /* ProjectHandler.m in Sources */,
+				296DB457183FF757005CFF0B /* CNSplitViewToolbar.m in Sources */,
+				296DB43D183FE734005CFF0B /* AdvertisementData.m in Sources */,
+				296DB456183FF757005CFF0B /* CNSplitViewDraggingHandle.m in Sources */,
+				296DB459183FF757005CFF0B /* CNSplitViewToolbarButtonCell.m in Sources */,
+				296DB446183FF592005CFF0B /* Beacon.m in Sources */,
+				296DB440183FED84005CFF0B /* Bacon.xcdatamodeld in Sources */,
+				296DB443183FEF51005CFF0B /* BeaconCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296DB418183FD319005CFF0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		296DB421183FD319005CFF0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 296DB3FA183FD319005CFF0B /* Bacon */;
+			targetProxy = 296DB420183FD319005CFF0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		296DB407183FD319005CFF0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				296DB408183FD319005CFF0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		296DB40D183FD319005CFF0B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				296DB40E183FD319005CFF0B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		296DB413183FD319005CFF0B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				296DB414183FD319005CFF0B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		296DB42A183FD319005CFF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		296DB42B183FD319005CFF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		296DB42D183FD319005CFF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7552382C21764DFFA3217AB2 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bacon/Bacon-Prefix.pch";
+				INFOPLIST_FILE = "Bacon/Bacon-Info.plist";
+				PRODUCT_NAME = Bacon;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		296DB42E183FD319005CFF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7552382C21764DFFA3217AB2 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bacon/Bacon-Prefix.pch";
+				INFOPLIST_FILE = "Bacon/Bacon-Info.plist";
+				PRODUCT_NAME = Bacon;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		296DB430183FD319005CFF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bacon.app/Contents/MacOS/Bacon";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bacon/Bacon-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BaconTests/BaconTests-Info.plist";
+				PRODUCT_NAME = BaconTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		296DB431183FD319005CFF0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bacon.app/Contents/MacOS/Bacon";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bacon/Bacon-Prefix.pch";
+				INFOPLIST_FILE = "BaconTests/BaconTests-Info.plist";
+				PRODUCT_NAME = BaconTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		296DB3F6183FD319005CFF0B /* Build configuration list for PBXProject "Bacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296DB42A183FD319005CFF0B /* Debug */,
+				296DB42B183FD319005CFF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296DB42C183FD319005CFF0B /* Build configuration list for PBXNativeTarget "Bacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296DB42D183FD319005CFF0B /* Debug */,
+				296DB42E183FD319005CFF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296DB42F183FD319005CFF0B /* Build configuration list for PBXNativeTarget "BaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296DB430183FD319005CFF0B /* Debug */,
+				296DB431183FD319005CFF0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		296DB43E183FED84005CFF0B /* Bacon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				296DB43F183FED84005CFF0B /* Bacon.xcdatamodel */,
+			);
+			currentVersion = 296DB43F183FED84005CFF0B /* Bacon.xcdatamodel */;
+			path = Bacon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 296DB3F3183FD319005CFF0B /* Project object */;
+}
