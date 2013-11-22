@@ -237,6 +237,14 @@
 
 -(IBAction)toggleBeaconAction:(id)sender
 {
+    if ([[self manager] state] != CBPeripheralManagerStatePoweredOn) {
+        NSAlert *alert = [NSAlert alertWithMessageText:@"Error" defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"There was an error when starting to advertise this Beacon."];
+        
+        [alert beginSheetModalForWindow:[self window] completionHandler:nil];
+        
+        return;
+    }
+    
     if ([[self manager] isAdvertising]) {
         [[self beaconStatusLabel] setAttributedStringValue:[[NSAttributedString alloc] initWithString:@"Beacon Off" attributes:@{NSFontAttributeName: [NSFont boldSystemFontOfSize:13]}]];
         
